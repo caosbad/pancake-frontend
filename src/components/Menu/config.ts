@@ -9,14 +9,26 @@ const config: MenuEntry[] = [
   {
     label: 'Trade',
     icon: 'TradeIcon',
+    status: {
+      text: 'MIGRATE',
+      color: 'warning',
+    },
     items: [
       {
+        label: 'LP Migration',
+        href: 'https://v1exchange.pancakeswap.finance/#/migrate',
+      },
+      {
         label: 'Exchange',
-        href: 'https://exchange.pancakeswap.finance',
+        href: 'https://exchange.pancakeswap.finance/#/swap',
       },
       {
         label: 'Liquidity',
         href: 'https://exchange.pancakeswap.finance/#/pool',
+      },
+      {
+        label: 'V1 Liquidity (Old)',
+        href: 'https://v1exchange.pancakeswap.finance/#/pool',
       },
     ],
   },
@@ -44,10 +56,6 @@ const config: MenuEntry[] = [
     label: 'Team Battle',
     icon: 'TeamBattleIcon',
     href: '/competition',
-    status: {
-      text: 'CLAIM',
-      color: 'warning',
-    },
   },
   {
     label: 'Teams & Profile',
